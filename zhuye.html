@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <!-- 引入 Tailwind CSS 简化样式编写 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 自定义少量样式，增强页面质感 */
+        body {
+            background-color: #f8fafc;
+        }
+        .card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <!-- 个人信息卡片 -->
+    <div class="card bg-white rounded-lg p-8 w-full max-w-md">
+        <h1 class="text-2xl font-bold text-gray-800 mb-2">徐永琪</h1>
+        <p class="text-gray-600 mb-6">个人主页</p>
+        
+        <!-- 新增：个人简介模块 -->
+        <div class="mb-6">
+            <h2 class="text-lg font-semibold text-gray-700 mb-2 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+                个人简介
+            </h2>
+            <p class="text-gray-600 leading-relaxed pl-7">
+                大二，南京大学人工智能专业在读。
+            </p>
+        </div>
+        
+        <!-- 邮箱信息 -->
+        <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <a href="mailto:zhangsan@example.com" class="text-blue-600 hover:underline">241300038@smail.nju.edu.com</a>
+        </div>
+    </div>
+</body>
+</html>
